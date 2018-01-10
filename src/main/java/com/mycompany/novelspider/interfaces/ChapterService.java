@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ChapterService {
     /**
-     * 入参是小说链接,返回小说章节list
+     * 获取章节列表实体
      * @param url
      * @return
      */
