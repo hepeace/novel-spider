@@ -1,5 +1,8 @@
 package com.mycompany.novelspider.Enum;
 
+/**
+ * 支持小说网站枚举
+ */
 public enum NovelSiteEnum {
     BIXIAWENXUE(1,"bxwx9.org"),
     BIQUGE(2,"biquge.com.tw"),
@@ -30,6 +33,11 @@ public enum NovelSiteEnum {
         this.url = url;
     }
 
+    /**
+     * 通过id获取枚举
+     * @param id
+     * @return
+     */
     public static NovelSiteEnum getNovelSiteEnumById(int id){
        switch (id) {
            case 1: return BIXIAWENXUE;
@@ -40,6 +48,11 @@ public enum NovelSiteEnum {
        }
     }
 
+    /**
+     * 通过url获取枚举
+     * @param url
+     * @return
+     */
     public static NovelSiteEnum getNovelSiteEnumByUrl(String url){
         for (NovelSiteEnum novelSiteEnum:values()) {
             if (url.contains(novelSiteEnum.url)) {

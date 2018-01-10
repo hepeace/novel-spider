@@ -4,12 +4,30 @@ import org.apache.commons.lang.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+/**
+ * 章节详情实体
+ */
 public class ChapterDetail implements Serializable {
     private static final long serialVersionUID = 456319336225595699L;
 
+    /**
+     * 章节标题
+     */
     private String title;
+
+    /**
+     * 章节内容
+     */
     private String content;
+
+    /**
+     * 章节上一页地址
+     */
     private String prev;
+
+    /**
+     * 章节下一页地址
+     */
     private String next;
 
     public static long getSerialVersionUID() {

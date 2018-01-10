@@ -13,6 +13,9 @@ import org.jsoup.select.Elements;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 获取章节列表实现
+ */
 public class ChapterServiceImpl extends SpiderCrawlService implements ChapterService {
 
     @Override

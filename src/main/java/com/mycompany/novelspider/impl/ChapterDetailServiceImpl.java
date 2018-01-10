@@ -10,6 +10,9 @@ import org.jsoup.nodes.Document;
 
 import java.util.Map;
 
+/**
+ * 获取章节详情实现
+ */
 public class ChapterDetailServiceImpl extends SpiderCrawlService implements ChapterDetailService {
 
     @Override
@@ -51,6 +54,11 @@ public class ChapterDetailServiceImpl extends SpiderCrawlService implements Chap
         return null;
     }
 
+    /**
+     * 默认判断
+     * @param splits
+     * @return
+     */
     private String[] parseSelector(String[] splits) {
         String[] newSplits = new String[2];
         if (splits.length == 1) {

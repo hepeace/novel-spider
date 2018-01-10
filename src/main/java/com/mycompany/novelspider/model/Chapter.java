@@ -7,13 +7,17 @@ import java.util.Objects;
  * 小说章节实体
  */
 public class Chapter implements Serializable {
+    private static final long serialVersionUID = -8390107239627534660L;
+
     /**
      * 章节标题
      */
+
     private String title;
     /**
      * 章节对应的url
      */
+
     private String url;
 
     public Chapter() {

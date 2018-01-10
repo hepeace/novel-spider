@@ -4,7 +4,7 @@ import com.mycompany.novelspider.model.ChapterDetail;
 
 public interface ChapterDetailService {
     /**
-     * 获取章节详情实体
+     * 获取章节详情接口
      * @param url
      * @return
      */
