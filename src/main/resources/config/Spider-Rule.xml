@@ -16,7 +16,6 @@
         <charset>gbk</charset>
         <url>biquge.com.tw</url>
         <chapter-list-selector>#list dd a</chapter-list-selector>
-        <chapter-list-selector>#TabCss dd a</chapter-list-selector>
         <chapter-detail-title-selector>.bookname h1</chapter-detail-title-selector>
         <chapter-detail-content-selector>#content</chapter-detail-content-selector>
         <chapter-detail-prev-selector>.bottem1 a,1</chapter-detail-prev-selector>
@@ -36,8 +35,19 @@
         <url>seputu.com</url>
         <chapter-list-selector>.bg ul a</chapter-list-selector>
         <chapter-detail-title-selector>.bg h1</chapter-detail-title-selector>
-        <chapter-detail-content-selector>.content p</chapter-detail-content-selector>
+        <chapter-detail-content-selector>.content</chapter-detail-content-selector>
         <chapter-detail-prev-selector>#shangyipian</chapter-detail-prev-selector>
         <chapter-detail-next-selector>#xiayipian</chapter-detail-next-selector>
+    </site>
+
+    <site>
+        <title>盗墓笔记重启</title>
+        <charset>UTF-8</charset>
+        <url>daomubiji.org</url>
+        <chapter-list-selector>.bg ul a</chapter-list-selector>
+        <chapter-detail-title-selector>.bg h1</chapter-detail-title-selector>
+        <chapter-detail-content-selector>.content > p</chapter-detail-content-selector>
+        <chapter-detail-prev-selector>.shangxia a,0</chapter-detail-prev-selector>
+        <chapter-detail-next-selector>.shangxia a,1</chapter-detail-next-selector>
     </site>
 </sites>

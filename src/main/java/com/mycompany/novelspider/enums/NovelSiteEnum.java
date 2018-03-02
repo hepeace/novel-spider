@@ -1,4 +1,4 @@
-package com.mycompany.novelspider.Enum;
+package com.mycompany.novelspider.enums;
 
 /**
  * 支持小说网站枚举
@@ -7,7 +7,8 @@ public enum NovelSiteEnum {
     BIXIAWENXUE(1,"bxwx9.org"),
     BIQUGE(2,"biquge.com.tw"),
     DINGDIANXIAOSHUO(3,"x23us.com"),
-    DAOMUBIJI(4,"seputu.com");
+    DAOMUBIJI(4,"seputu.com"),
+    DAOMUBIJICHONGQI(5,"daomubiji.org");
 
     private int id;
     private String url;
@@ -44,6 +45,7 @@ public enum NovelSiteEnum {
            case 2: return BIQUGE;
            case 3: return DINGDIANXIAOSHUO;
            case 4: return DAOMUBIJI;
+           case 5: return DAOMUBIJICHONGQI;
            default: throw  new RuntimeException("id= " + id + "目前暂不支持该网站,敬请期待!");
        }
     }

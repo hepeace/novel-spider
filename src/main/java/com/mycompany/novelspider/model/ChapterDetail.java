@@ -73,7 +73,8 @@ public class ChapterDetail implements Serializable {
     public String toString() {
         return "ChapterDetail{" +
                 "title='" + title + '\'' +
-                ", content='" + StringUtils.abbreviate(content,30) + '\'' +
+//                ", content='" + StringUtils.abbreviate(content,30) + '\'' +
+                ", content='" + content + '\'' +
                 ", prev='" + prev + '\'' +
                 ", next='" + next + '\'' +
                 '}';

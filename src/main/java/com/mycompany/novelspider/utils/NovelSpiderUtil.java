@@ -1,6 +1,6 @@
 package com.mycompany.novelspider.utils;
 
-import com.mycompany.novelspider.Enum.NovelSiteEnum;
+import com.mycompany.novelspider.enums.NovelSiteEnum;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;

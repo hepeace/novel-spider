@@ -3,13 +3,11 @@ package com.mycompany.novelspider.impl;
 import com.mycompany.novelspider.interfaces.ChapterDetailService;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class ChapterDetailServiceImplTest {
 
     @Test
     public void getChapterDetail() {
-        ChapterDetailService chapterDetailService = new ChapterDetailServiceImpl();
-        System.out.println(chapterDetailService.getChapterDetail("http://seputu.com/biji1/2.html"));
+        ChapterDetailService chapterDetailService = new DaoMiChapterDetailServiceImpl();
+        System.out.println(chapterDetailService.getChapterDetail("http://www.biquge.com.tw/4_4102/2390027.html"));
     }
 }

@@ -1,6 +1,6 @@
 package com.mycompany.novelspider.impl;
 
-import com.mycompany.novelspider.Enum.NovelSiteEnum;
+import com.mycompany.novelspider.enums.NovelSiteEnum;
 import com.mycompany.novelspider.interfaces.ChapterService;
 import com.mycompany.novelspider.model.Chapter;
 import com.mycompany.novelspider.service.SpiderCrawlService;
@@ -25,6 +25,7 @@ public class ChapterServiceImpl extends SpiderCrawlService implements ChapterSer
             Document document = Jsoup.parse(result);
             document.setBaseUri(url);
             String selector = NovelSpiderUtil.getConfig(NovelSiteEnum.getNovelSiteEnumByUrl(url)).get("chapter-list-selector");
+            System.out.println("selector: " + selector);
             Elements elements = document.select(selector);
             List<Chapter> chapterList = new ArrayList<>();
             for (Element element: elements) {

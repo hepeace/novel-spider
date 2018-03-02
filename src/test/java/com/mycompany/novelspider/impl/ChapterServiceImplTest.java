@@ -15,7 +15,7 @@ public class ChapterServiceImplTest{
     @Test
     public void getChapters() {
         ChapterService chapterService = new ChapterServiceImpl();
-        List<Chapter> chapters = chapterService.getChapters("http://www.seputu.com/");
+        List<Chapter> chapters = chapterService.getChapters("http://www.biquge.com.tw/4_4102/");
         for (Chapter chapter:chapters) {
             System.out.println(chapter);
         }
